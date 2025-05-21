@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Star Academy</title>
+  <style>
+    /* Animated gradient background */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #d28383, #2563eb, #6b46c1, #f59e0b);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #000000;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Navbar styling */
+    nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    nav a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    
+    nav a:hover, nav a.active {
+      color: #1e40af;
+    }
+    
+    /* Container for About Us content */
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 25px 30px;
+      background: #ffffffcc; /* White with slight transparency */
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      backdrop-filter: blur(6px);
+      text-align: center;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333333;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div class="container">
+    <h1>About Star Academy</h1>
+    <p>
+      At Star Academy, our mission is to ignite the spark of curiosity and empower students to achieve their fullest potential. 
+      We believe learning should be engaging, inspiring, and accessible to everyone. 
+      Whether you’re passionate about science, math, languages, or arts, we provide a supportive space for you to explore, grow, and shine bright like a star. 
+      Join us and be part of a community dedicated to knowledge, creativity, and success!
+    </p>
+  </div>
+
+</body>
+</html>
