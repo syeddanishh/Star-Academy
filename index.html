@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Star Academy - Home</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #d28383, #2563eb, #6b46c1, #f59e0b);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #000000;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .navbar {
+      background-color: #ffffffcc;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #1e3a8a;
+      font-size: 18px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffffcc;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+      text-align: center;
+    }
+
+    .button {
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 10px 5px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #1e40af;
+    }
+
+    a.email-link {
+      display: block;
+      margin-top: 15px;
+      color: #2563eb;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+  <div class="container">
+    <h1>Welcome to Star Academy 🌟</h1>
+    <p><strong>Your one-stop learning space!</strong></p>
+    <p>Explore subjects, stay curious, and shine like a star in your studies! ✨</p>
+
+    <a href="tel:+918125288773" class="button">📞 Call Now</a>
+    <a href="mailto:staracademy.institution@gmail.com" class="email-link">✉️ Email us: staracademy.institution@gmail.com</a>
+  </div>
+
+</body>
+</html>
